@@ -19,4 +19,5 @@ echo "
 Running Node Js Server
 ----------------------
 "
+npm start
 exit 0
