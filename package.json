@@ -2,10 +2,10 @@
   "name": "shafiq-law-chamber",
   "version": "1.0.0",
   "description": "This is will a website for Saqib Shafiq and his firm Shafiq Law Chamber",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",

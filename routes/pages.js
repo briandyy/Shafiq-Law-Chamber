@@ -19,8 +19,25 @@ router.get('/contact', function (req, res){
 
 // rendering the Oratice Page
 router.get('/services', function (req, res){
-    res.render('./services/Pratice');
+    res.render('./services/service');
 });
+
+router.get('/FAQ',function (req, res){
+    res.render('./FAQ/FAQ');
+});
+
+router.get('/team',function (req, res){
+    res.render('./team/team');
+});
+
+router.get('/terms',function (req,res){
+    res.render('./Terms/terms-conditions');
+});
+
+router.get('/privacy',function (req,res){
+    res.render('./Privacy/privacy-policy');
+});
+
 
 
 // Exporting all of the pages to the index.js files.
