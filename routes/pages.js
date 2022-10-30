@@ -22,6 +22,11 @@ router.get('/services', function (req, res){
     res.render('./services/Pratice');
 });
 
+router.get('/FAQ',function (req, res){
+    res.render('./FAQ/FAQ');
+});
+
+
 
 // Exporting all of the pages to the index.js files.
 // there express will run this on the server.
