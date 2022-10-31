@@ -5,7 +5,7 @@ Write-Host("Running git commands");
 git status
 git add * 
 git commit -m 'Updating Files in Development Branch'
-git pull
+git push
 
 Write-Host("Running Node JS Serve");
 
