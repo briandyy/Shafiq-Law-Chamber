@@ -16,7 +16,7 @@ jobs:
       
       - name: Build
         run: 
-            hugo -t gokarna
+            hugo -t justice-hugo-template
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
