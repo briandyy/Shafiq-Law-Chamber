@@ -1,0 +1,6 @@
+name: Unknown
+description: This is the default when no matching author is found.
+image: "/team/"
+credentials:
+# phone_extension:
+# is_staff_member: false
