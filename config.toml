@@ -6,6 +6,7 @@ googleAnalytics = ""
 Paginate = 10
 PaginatePath = "/"
 enableRobotsTXT = true
+theme="justice-hugo-template"
 
 [taxonomies]
   category = "categories"
