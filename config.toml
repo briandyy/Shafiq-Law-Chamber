@@ -48,40 +48,40 @@ enableRobotsTXT = true
   new_window = "Whether the link opens a new browser tab/window."
 
   [outputs]
-  home = ["HTML","JSON"]
-  section = ["HTML","JSON"]
+  home = ["HTML"]
+  section = ["HTML"]
 
-  [cms]
-  [[cms.collections]]
-    name = "blog_post"
-    folder = "content/post/"
-    create = true
-    slug = "{{year}}-{{month}}-{{day}}-{{slug}}"
+  # [cms]
+  # [[cms.collections]]
+  #   name = "blog_post"
+  #   folder = "content/post/"
+  #   create = true
+  #   slug = "{{year}}-{{month}}-{{day}}-{{slug}}"
 
-    [[fields]]
-    label = "Author Name"
-    name = "author"
-    widget = "string"
+  #   [[fields]]
+  #   label = "Author Name"
+  #   name = "author"
+  #   widget = "string"
 
-    [[fields]]
-    label = "Title"
-    name = "title"
-    widget = "string"
+  #   [[fields]]
+  #   label = "Title"
+  #   name = "title"
+  #   widget = "string"
 
-    [[fields]]
-    label = "Date and Time"
-    name = "date"
-    widget = "datetime"
+  #   [[fields]]
+  #   label = "Date and Time"
+  #   name = "date"
+  #   widget = "datetime"
 
-    [[fields]]
-    label = "Blog Image"
-    name = "image"
-    widget = "image"
+  #   [[fields]]
+  #   label = "Blog Image"
+  #   name = "image"
+  #   widget = "image"
 
-    [[fields]]
-    label = "Blog Content"
-    name = "body"
-    widget = "markdown"
+  #   [[fields]]
+  #   label = "Blog Content"
+  #   name = "body"
+  #   widget = "markdown"
 
 
 
