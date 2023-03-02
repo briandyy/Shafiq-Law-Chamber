@@ -21,6 +21,8 @@ enableRobotsTXT = true
   description = "Welcome to Shafiq Law Chamber"
   images = ["siteicon.png"]
   title = "Shafiq Law Chanmber"
+  author = "Abdul Rafay"
+
 
 [params._selectData]
   call_to_actions = ["Contact", "Blog", "Map"]
@@ -44,3 +46,51 @@ enableRobotsTXT = true
   credentials = "Shown as subtext on staff member summaries."
   contact_email_address = "Address for the contact form to send to."
   new_window = "Whether the link opens a new browser tab/window."
+
+  [outputs]
+  home = ["HTML", "JSON"]
+  section = ["HTML", "JSON"]
+  taxonomy = ["HTML", "JSON"]
+
+
+  [cms]
+  [[cms.collections]]
+  # name = "blog"
+  # label = "Blog"
+  # folder = "content/blog"
+  # create = true
+  # fields = [
+  #   {label = "Title", name = "title", widget = "string"},
+  #   {label = "Date", name = "date", widget = "datetime"},
+  #   {label = "Body", name = "body", widget = "markdown"}
+  # ]
+
+  name = "blog_post"
+  folder = "content/post/"
+  create = true
+  slug = "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+  [[fields]]
+  label = "Author Name"
+  name = "author"
+  widget = "string"
+
+  [[fields]]
+  label = "Title"
+  name = "title"
+  widget = "string"
+
+  [[fields]]
+  label = "Date and Time"
+  name = "date"
+  widget = "datetime"
+
+  [[fields]]
+  label = "Blog Image"
+  name = "image"
+  widget = "image"
+
+  [[fields]]
+  label = "Blog Content"
+  name = "body"
+  widget = "markdown"
