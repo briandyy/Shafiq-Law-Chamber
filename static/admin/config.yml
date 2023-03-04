@@ -1,25 +1,101 @@
+# backend:
+#   name: git-gateway
+#   branch: build
+
+# media_folder: static/images/blog
+# public_folder: /images/blog
+# repo: https://github.com/1-Power/Shafiq-Law-Chamber # Path to your GitHub repository
+# open_authoring: true
+# search: true
+
+# collections:
+#   - name: "blog"
+#     label: "Blog"
+#     label_singular: "Post"
+#     folder: "/content/posts"
+#     path: {{slug}}
+#     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+#     create: true
+#     fields:
+#       # - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post.template"}
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Author Name", name: "author", widget: "string"}
+#       - {label: "Publish Date", name: "date", widget: "datetime"}
+#       - {label: "Featured Image", name: "thumbnail", widget: "image", required: FALSE}
+#       - {label: "Category", name: "category", widget: "string"}
+#       - {label: "URL", name: "URL", widget: "string"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   # - name: "default"
+#   #     label: "Pages"
+#   #     files:
+#   #       - file: "content/_index.md"
+#   #         label: "Home Page"
+#   #         name: "home"
+#   #         fields:
+#   #           - { label: "Title", name: "title", widget: "string" }
+#   #           - { label: "Blurb", name: "blurb", widget: "text" }
+#   #           - {
+#   #               label: "Section",
+#   #               name: "section",
+#   #               widget: "object",
+#   #               fields:
+#   #                 [
+#   #                   { label: "Heading", name: "heading", widget: string },
+#   #                   { label: "Text", name: "text", widget: "text" },
+#   #                 ],
+#   #             }
+#   #       - file: "content/about/index.md"
+#   #         label: "About"
+#   #         name: "about"
+#   #         fields:
+#   #           - { label: "Title", name: "title", widget: "string" }
+#   #           - { label: "Body", name: "body", widget: "text" }
+
+
+
+
 backend:
   name: git-gateway
-  branch: build
-
-media_folder: static/images/blog
-public_folder: /images/blog
-repo: https://github.com/1-Power/Shafiq-Law-Chamber # Path to your GitHub repository
-open_authoring: true
-search: true
-
+  branch: main
+media_folder: "static/images" # Folder where user uploaded files should go
+public_folder: "images"
 collections:
-  - name: "blog"
-    label: "Blog"
-    label_singular: "Post"
-    folder: "/posts"
-    create: true
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post.template"}
-      - {label: "Title", name: "title", widget: "string"}
+  - name: "posts" # Used in routes, e.g., /admin/collections/post
+    label: "Posts" # Used in the UI
+    folder: "content/posts" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
       - {label: "Author Name", name: "author", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Category", name: "category", widget: "string"}
-      - {label: "URL", name: "URL", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-
+      - { label: "Body", name: "summary-details", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Blurb", name: "blurb", widget: "text" }
+          - {
+              label: "Section",
+              name: "section",
+              widget: "object",
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Text", name: "text", widget: "text" },
+                ],
+            }
+      - file: "content/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
