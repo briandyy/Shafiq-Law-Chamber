@@ -1,85 +1,12 @@
-# backend:
-#   # name: 
-#   repo: "https://github.com/1-Power/Shafiq-Law-Chamber"
-#   branch: main # Branch to update (optional; defaults to master)
-#   media_folder: "static/images/blogs" # Media files will be stored in the repo under images/uploads
-#   collections:
-#     name: "page" # Used in routes, e.g., /admin/collections/blog
-#     label: "page" # Used in the UI
-#     folder: "content/" # The path to the folder where the documents are stored
-#     create: true # Allow users to create new documents in this collection
-#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-#     url: "//"
-#     media_folder: "static/images/blog"
-#     public_folder: "/images/blog"
-#     Author: "saqib-shfiq"
-#     site_url: https://shafiqlawchamber.com
-#     show_preview_links: true
-#     search: true
-
-
-#   - name: 'posts' # Used in routes, ie.: /admin/collections/:slug/edit
-#     label: 'Posts' # Used in the UI
-#     label_singular: 'Post' # Used in the UI, ie: "New Post"
-#     description: >
-#       The description is a great place for tone setting, high level information, and editing
-#       guidelines that are specific to a collection.
-#     folder: '_posts'
-#     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-#     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
-#     create: true # Allow users to create new documents in this collection
-#     view_filters:
-#       - label: Posts With Index
-#         field: title
-#         pattern: 'This is post #'
-#       - label: Posts Without Index
-#         field: title
-#         pattern: front matter post
-#       - label: Drafts
-#         field: draft
-#         pattern: true
-#     view_groups:
-#       - label: Year
-#         field: date
-#         pattern: \d{4}
-#       - label: Drafts
-#         field: draft
-#     fields: # The fields each document in this collection have
-#       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-#       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
-#       - {
-#           label: 'Publish Date',
-#           name: 'date',
-#           widget: 'datetime',
-#           date_format: 'YYYY-MM-DD',
-#           time_format: 'HH:mm',
-#           format: 'YYYY-MM-DD HH:mm',
-#         }
-#       - label: 'Cover Image'
-#         name: 'image'
-#         widget: 'image'
-#         required: false
-#         tagname: ''
-
-#       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
-
-
-#     fields: # The fields for each document, usually in front matter
-#       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-#       - {label: "Title", name: "title", widget: "string"}
-#       - {label: "Publish Date", name: "date", widget: "datetime"}
-#       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-#       # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-#       - {label: "Body", name: "body", widget: "markdown"}
-
-
-
 backend:
   name: git-gateway
-  branch: main
+  branch: build
 
 media_folder: static/images/blog
 public_folder: /images/blog
+repo: https://github.com/1-Power/Shafiq-Law-Chamber # Path to your GitHub repository
+open_authoring: true
+search: true
 
 collections:
   - name: "blog"
@@ -90,25 +17,9 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post.template"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author Name", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "URL", name: "URL", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page.template"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/index.md"
-        label: "Home"
-        name: "home"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page.template"}
-          - {label: "Smoothies Section Heading", name: "smoothiesHeading", widget: "string"}
-          - {label: "Posts Section Heading", name: "postsHeading", widget: "string"}
-          - {label: "Contact Section Heading", name: "contactHeading", widget: "string"}
