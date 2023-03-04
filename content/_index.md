@@ -6,7 +6,7 @@ menu:
   footer:
     weight: 1
 testimonials:
-  - message: We use Shafiw Law Chamber in all our endeavours. They offer an unparalleled service when it comes to running a business.
+  - message: We use Shafiq Law Chamber in all our endeavours. They offer an unparalleled service when it comes to running a business.
     image: "https://placekitten.com/g/60/60?a=.png"
     name: Joice Carmold
   - message: Shafiq Law Chamber are the best of the best. Being local, they care about people and have strong ties to the community.
