@@ -73,7 +73,7 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - {label: "Author Name", name: "author", widget: "string"}
-      - { label: "Body", name: "summary-details", widget: "markdown" }
+      - { label: "Body", name: "summary", widget: "markdown" }
   - name: "pages"
     label: "Pages"
     files:
