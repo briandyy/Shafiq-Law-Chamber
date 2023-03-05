@@ -77,7 +77,7 @@ collections:
       # blog Post URl
       - {label: "Blog-Post URL", name: "", widget: "string"}
       # Blog Post Summary
-      - {label: "Blog Category", name: "summary", widget: "markdown"}
+      - {label: "Blog Category", name: "summary", widget: "string"}
       # Blog Post Content 
       - { label: "Body", name: "summary-details", widget: "markdown" }
   - name: "pages"
