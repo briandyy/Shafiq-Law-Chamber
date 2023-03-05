@@ -6,6 +6,8 @@ categories:
 author: john-doe
 image: "https://unsplash.it/600/450?image=448&a=.png"
 draft: true
+categories: 
+        - Real-Estate
 ---
 
 Flipping is a term used primarily in the US to describe purchasing a revenue-generating asset and quickly reselling it for profit.

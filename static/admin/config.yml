@@ -55,22 +55,31 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "static/images" # Folder where user uploaded files should go
+media_folder: "/static/images/blog/" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/post
     label: "Posts" # Used in the UI
     folder: "/content/posts/" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
+    path: "{{slug}}/public"
     media_folder: "" # Save images in the post's own folder instead of the static folder
-    public_folder: ""
+    public_folder: "/public"
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
+      # This will be titile 
       - { label: "Title", name: "title", widget: "string" }
+      # Publish Date
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      # Upload thumbnail
       - { label: "Featured Image", name: "image", widget: "image" }
+      # Author-Name
       - {label: "Author Name", name: "author", widget: "string"}
-      - { label: "Body", name: "summary", widget: "markdown" }
+      # blog Post URl
+      - {label: "Blog-Post URL", name: "", widget: "string"}
+      # Blog Post Summary
+      - {label: "Blog Category", name: "summary", widget: "markdown"}
+      # Blog Post Content 
+      - { label: "Body", name: "summary-details", widget: "markdown" }
   - name: "pages"
     label: "Pages"
     files:

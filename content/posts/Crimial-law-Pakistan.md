@@ -6,6 +6,8 @@ author: "saqib-shafiq"
 image: "/images/blog/Criminal-law.jpg"
 draft: false
 url: "/criminal-law-pakistan/"
+categories: 
+        - Civil Law
 ---
 
 Criminal law in Pakistan is the set of legal rules and regulations that define crimes, specify punishments for criminal offenses, and outline the legal procedures for the investigation and prosecution of criminal cases. Criminal law aims to maintain social order, protect public safety, and punish offenders who violate the law.
