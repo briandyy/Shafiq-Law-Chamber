@@ -47,50 +47,6 @@ enableRobotsTXT = true
   contact_email_address = "Address for the contact form to send to."
   new_window = "Whether the link opens a new browser tab/window."
 
-  [outputs]
+[outputs]
   home = ["HTML"]
   section = ["HTML"]
-
-  # [cms]
-  # [[cms.collections]]
-  #   name = "blog_post"
-  #   folder = "content/post/"
-  #   create = true
-  #   slug = "{{year}}-{{month}}-{{day}}-{{slug}}"
-
-  #   [[fields]]
-  #   label = "Author Name"
-  #   name = "author"
-  #   widget = "string"
-
-  #   [[fields]]
-  #   label = "Title"
-  #   name = "title"
-  #   widget = "string"
-
-  #   [[fields]]
-  #   label = "Date and Time"
-  #   name = "date"
-  #   widget = "datetime"
-
-  #   [[fields]]
-  #   label = "Blog Image"
-  #   name = "image"
-  #   widget = "image"
-
-  #   [[fields]]
-  #   label = "Blog Content"
-  #   name = "body"
-  #   widget = "markdown"
-
-
-
-  # name = "blog"
-  # label = "Blog"
-  # folder = "content/blog"
-  # create = true
-  # fields = [
-  #   {label = "Title", name = "title", widget = "string"},
-  #   {label = "Date", name = "date", widget = "datetime"},
-  #   {label = "Body", name = "body", widget = "markdown"}
-  # ]
