@@ -17,6 +17,10 @@ jobs:
       - name: Install npm & Node.js
         run: sudo apt-get install npm nodejs -y 
       
+      - name: Installing Dependencies
+        run: 
+            npm install
+        
       - name: Build tinaCMS & HUGO website
         run: 
             tinacms build && hugo
