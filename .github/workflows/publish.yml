@@ -11,16 +11,14 @@ jobs:
       - name: git-checkout
         uses: actions/checkout@v2
         
-      - name: Install Hugo CLI
-        run: sudo apt-get install hugo -y
+      - name: Install Hugo, Node.js & npm
+        run: sudo apt-get install hugo  npm nodejs -y
 
-      - name: Install npm & Node.js
-        run: sudo apt-get install npm nodejs -y 
-      
-      - name: Installing Dependencies
-        run: 
+      - name: Installing Dependencies & TinaCMS CLI Tool
+        run:
+            npm install @tinacms/cli 
             npm install
-            npm install -g @tinacms/cli
+            
         
       - name: Build tinaCMS & HUGO website
         run: 
