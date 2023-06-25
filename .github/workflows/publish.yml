@@ -20,6 +20,7 @@ jobs:
       - name: Installing Dependencies
         run: 
             npm install
+            npm install -g @tinacms/cli
         
       - name: Build tinaCMS & HUGO website
         run: 
