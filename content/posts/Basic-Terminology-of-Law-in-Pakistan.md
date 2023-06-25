@@ -3,7 +3,7 @@ title: ' Basic-Terminology-of-Law-in-Pakistan'
 author: saqib-shafiq
 url: /basic-terminology/
 date: 2023-06-25T19:00:00.000Z
-draft: false
+draft: true
 categories:
   - Law
 image: /images/blog/define Words in law .png
