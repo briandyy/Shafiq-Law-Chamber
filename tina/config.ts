@@ -14,7 +14,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "static",
       publicFolder: "static",
     },
   },
@@ -109,6 +109,7 @@ export default defineConfig({
     indexBatchSize: 100,
     maxSearchIndexFieldLength: 100
   },
+  
 
 });
 
