@@ -1,6 +1,6 @@
 <p align="center">
     <a herf="https://shafiqlawchamber.com/">
-    <img src="static/readme/logo2.png" alt="Future Insight"  width="230px" height="230px">
+    <img src="static/readme/logo-2.png" alt="Future Insight"  width="230px" height="230px">
     </a>
   <br>
 </p>
