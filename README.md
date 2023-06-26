@@ -1,3 +1,4 @@
+<br>
 <p align="center">
     <a herf="https://shafiqlawchamber.com/">
     <img src="static/readme/logo-2.png" alt="Future Insight"  width="230px" height="230px">
@@ -51,6 +52,12 @@ Check out [Shafiq Law Chamber](https://shafiqlawchamber.com/)
 The website is deployed on Netlify. 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0e107b04-2360-4b98-9357-68fbebc76e94/deploy-status)](https://app.netlify.com/sites/shafiq-law-chamber/deploys)
+
+# Acknowledgments
+- This project was bootstrapped with [Hugo](https://gohugo.io/). A heartfelt thank you goes out to Hugo and its incredible community.
+- We would like to extend a special and warm appreciation to [CloudCannon](https://github.com/CloudCannon) for creating this amazing theme.
+- Our deep gratitude goes to [Future Insight](https://futureinsight.blog/) for their invaluable contributions and modifications to this website.
+- We are genuinely thrilled and grateful to [TinaCMS](https://tina.io/) for providing us with a stunning content management system that brings joy to our hearts.
 
 # Contact Information:
 This website is developed by [Future Isnight](https://futureinsight.blog/). If you have any questions or suggestions, please feel free to contact us at our [email](mailto:futureinsightblog@gmail.com) or [contact us](https://future-insight.blog/contact/)
