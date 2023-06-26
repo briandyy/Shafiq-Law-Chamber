@@ -1,12 +1,11 @@
 <p align="center">
-    <a herf="https://future-insight.blog/">
-    <img src="static/readme/logo.png" alt="Future Insight"  width="230px" height="230px">
+    <a herf="https://shafiqlawchamber.com/">
+    <img src="static/readme/logo2.png" alt="Future Insight"  width="230px" height="230px">
     </a>
   <br>
 </p>
 
 <h1 align="center">
-    Hi there
     <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" 
          alt="Waving hand animated gif"
          height="35"
