@@ -3,11 +3,7 @@ title: Legal Terms
 call_to_action: Contact
 large_header: false
 ---
-<!-- 
-This is usually where the fine print would go, but here's part of the Wikipedia entry on dogs instead:
 
---- -->
-<!-- # Legal Terms in Pakistan -->
 ## Criminal Law
 - Felony: A serious criminal offense punishable by imprisonment or death.
 - Misdemeanor: A minor criminal offense that is less serious than a felony.
